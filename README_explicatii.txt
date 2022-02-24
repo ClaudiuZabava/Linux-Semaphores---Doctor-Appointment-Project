@@ -1,9 +1,3 @@
-OBSERVATII:
-Proiectul nu este 100% finisat, existand posibile cazuri netratate.
-Cu toate astea, este intr-un stadiu inaintat asa ca mi-am dorit sa primesc un feedback de la dumneavoastra pentru a-mi da seama daca modul de abordare si codul scris
-pana acum este OK. 
-
-
 Programul simuleaza activitatea dintr-un cabinet medical.
 
 Mai multi pacienti apar la ore diferite si in functie de disponibilitatea numarului de doctori incep o consultatie ce dureaza un anumit timp.
