@@ -13,21 +13,22 @@ INTERVAL - intervalul de spawn al pacientilor
 LIMIT - cat poate dura maxim o consultatie. 
 
 
-!! IMPORTANT:
+!OBSERVATIE :
+
 Programul etse structurat a.i. sa foloseasca functii ce opresc executia anumitor threaduri 
 pentru un timp real specificat.
-Intrucat nu vrem ca programul sa ruleze intr-un timp prea mare ( 10 minute / o ora in viata reala) am considerat
-1 secunda in viata reala = 1 ora in simularea consultatiilor.
 
-Astfel, la fel ca in realitate, medicii nu se pot ocupa intr-o singura zi de un numar prea mare de pacienti,
+Prin conventie, am ales 1 sec == 1 ora in simulare. 
+
+La fel ca in realitate, medicii nu se pot ocupa intr-o singura zi de un numar prea mare de pacienti,
  mai ales daca timpul consultatiei reprezinta cateva ore.
 
- In programul nostru un medic lucreaza de la ora 8 la ora 24 (sfarsitul zilei).
+In programul nostru un medic lucreaza de la ora 8 la ora 24 (sfarsitul zilei).
  Orele la care apar pacienti si durata unei consultatii sunt generate random, dar programul verifica
  daca pacientul se va incadra in timpul doctorului. In caz contrar, acesta va fi respins si se va afisa un mesaj
- Exemplu : verificati screenshot-ul : 'prea_multi_pacienti.png'
+ Exemplu : verificati imaginea : 'prea_multi_pacienti.png'
 
- Astfel, este recomandat sa folositi valori optime pentru NTHRS, DOCTS, INTERVAL,
+Se recomanda folosirea unor valori optime pentru NTHRS, DOCTS, INTERVAL,
  pentru a testa codul intr-un timp real acceptabil si pentru a vedea daca toti pacientii se incadreaza intr-o zi.
 
 */
